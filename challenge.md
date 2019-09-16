@@ -275,7 +275,7 @@ career here, you'll have to answer the following:
   slightly different things running on all of them. How could containers help us
   improve this situation?
   
-  Ci\onatiners do exactly what their name implies, contain. Meaning, everything needed 
+  Conatiners do exactly what their name implies, contain. Meaning, everything needed 
   to run the given code, is stored in the contatiner so that it can be run on any 
   computer including the imports needed to run the code.
 
