@@ -1,5 +1,5 @@
 import random
-from Acme import Product
+from acme import Product
 
 
 adjectives = ['Awesome', 'Shiny', 'Impressive', 'Portable', 'Improved']
@@ -14,8 +14,10 @@ def generate_names(adjectives, nouns):
 def generate_products(num_products=30):
     products = []
     for p in range(30):
-        x = Product(name = generate_names(adjectives, nouns), price = random.randint(5,100), weight = random.randint(5,100),
-                flammability = random.uniform(0.0, 2.5))
+        x = Product(name=generate_names(adjectives, nouns),
+                    price=random.randint(5, 100),
+                    weight=random.randint(5, 100),
+                    flammability=random.uniform(0.0, 2.5))
         products.append(x)
 
     return products

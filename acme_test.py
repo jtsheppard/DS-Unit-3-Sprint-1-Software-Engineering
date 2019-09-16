@@ -1,6 +1,7 @@
 import unittest
-from Acme import Product
+from acme import Product
 from Acme_report import generate_products, adjectives, nouns
+
 
 class AcmeProductTests(unittest.TestCase):
     """Ensuring Acme products are top of the line!"""
