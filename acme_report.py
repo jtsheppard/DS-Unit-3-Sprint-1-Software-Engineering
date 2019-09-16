@@ -27,15 +27,18 @@ def inventory_report(products):
     prices = []
     weights = []
     flams = []
+    names = []
     for p in products:
         prices.append(p.price)
         weights.append(p.weight)
         flams.append(p.flammability)
+        names.append(p.name)
     price_avg = sum(prices) / len(prices)
     weight_avg = sum(weights) / len(weights)
     flam_avg = sum(flams) / len(flams)
+    num_unique_names = len(set(names))
 
-    print(price_avg, weight_avg, flam_avg)
+    print(price_avg, weight_avg, flam_avg, num_unique_names)
 
 
 if __name__ == '__main__':
